@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
-h1{
-    text-align: center;
-    font-family: 'Montserrat:wght@200', sans-serif ;
+body{
+    margin: 0;
+    padding: 0;
+}
+header h1{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
+    height: 100px;
+    margin: auto;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
 }
 aside{
     overflow: auto;
@@ -19,7 +27,27 @@ aside img {
     margin: auto;
     filter: grayscale(1);
 }
-aside img:hover{
+aside img:hover {
     filter: grayscale(0);
     transition-duration: 3s;
+}
+section{
+    position: relative ;
+    margin-left: 200px;
+    display: inline-block;
+}
+section img{
+    width:50%;
+}
+section div{
+    display: inline-block;
+    width:50%;
+}
+section div h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+section div p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
