@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
-body{
+html, body{
     margin: 0;
     padding: 0;
+    height:93%;
 }
 header h1{
     font-family: 'Montserrat', sans-serif;
@@ -31,17 +32,23 @@ aside img:hover {
     filter: grayscale(0);
     transition-duration: 3s;
 }
+aside #activo{
+    filter: grayscale(0);!important;
+}
 section{
-    position: relative ;
+    position: relative;
     margin-left: 200px;
-    display: inline-block;
+    height: 100%;
 }
 section img{
-    width:50%;
+    width: 50%;
+    height: 100%;
 }
 section div{
     display: inline-block;
-    width:50%;
+    text-align: center;
+    position: relative;
+    top: -25%;
 }
 section div h1{
     font-family: 'Montserrat', sans-serif;
@@ -50,4 +57,7 @@ section div h1{
 section div p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
+}
+section div p:nth-of-type(2){
+    font-weight: 700;
 }
