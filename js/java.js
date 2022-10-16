@@ -1,3 +1,22 @@
+function loaded() {
+    activo = document.getElementById("activo").className;
+    if (activo == "mini breda"){
+        activarb()
+    }
+    if (activo == "mini venus"){
+        activarve()
+    }
+    if (activo == "mini vulcano"){
+        activarvu()
+    }
+    if (activo == "mini meninas"){
+        activarm()
+    }
+    if (activo == "mini inocencio"){
+        activari()
+    }
+}
+
 function activarb() {
     document.getElementsByClassName("mini")[1].removeAttribute("id");
     document.getElementsByClassName("mini")[2].removeAttribute("id");
@@ -38,4 +57,3 @@ function activari() {
     document.getElementsByClassName("inocencio")[0].setAttribute("id","activo");
     document.getElementById("imagen").src="img/inocencio.jpg";
 }
-

@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/java.js"></script>
 </head>
-<body>
+<body onload="loaded();">
     <header>
         <h1> Cuadros de Velazquez</h1>
     </header>
     <aside>
         <img class="mini breda"  onclick="activarb()" src="img/breda-mini.jpg" id="activo">
         <br>
-        <img class="mini venus" onclick="activarve()" src="img/venus-mini.jpg">
+        <img class="mini venus" onclick="activarve()" src="img/venus-mini.jpg" >
         <br>
         <img class="mini vulcano" onclick="activarvu()" src="img/vulcano-mini.jpg">
         <br>
@@ -24,13 +24,15 @@
         <img class="mini inocencio" onclick="activari()" src="img/inocencio-mini.jpg">
     </aside>
     <section>
-        <img id="imagen" src="img/breda.jpg">
+        <article>
+        <img id="imagen" src="">
+        </article>
         <div id="texto">
             <h1>RENDICIÓN DE BREDA</h1>
-            <p>123321</p>
-            <p>123321</p>
-            <p>Replica del cuadro a colores originales y tamaño 150 x 150cm</p>
-            <p>COMPRAR</p>
+            <h2>1634-35</h2>
+            <h2>380€</h2>
+            <h2>Réplica del cuadro a colores originales y tamaño 150 x 80cm</h2>
+            <h2>COMPRAR</h2>
         </div>
     </section>
 </body>

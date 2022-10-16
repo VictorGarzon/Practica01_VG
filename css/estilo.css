@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
 html, body{
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     height:93%;
 }
 header h1{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     height: 100px;
     margin: auto;
@@ -36,28 +36,44 @@ aside #activo{
     filter: grayscale(0);!important;
 }
 section{
-    position: relative;
     margin-left: 200px;
     height: 100%;
+    position: relative;
 }
-section img{
+section article{
     width: 50%;
     height: 100%;
+    display: inline-block;
+}
+section article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 section div{
+    width: 45%;
     display: inline-block;
     text-align: center;
+    white-space: initial;
     position: relative;
-    top: -25%;
+    top: -25px;
 }
 section div h1{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
-section div p{
-    font-family: 'Montserrat', sans-serif;
+section div h2{
     font-weight: 200;
 }
-section div p:nth-of-type(2){
+section div h2:nth-of-type(2), section div h2:nth-last-of-type(1){
     font-weight: 700;
+}
+section div h2:nth-last-of-type(1){
+    padding: 20px 100px 20px 100px;
+    display: inline-block;
+    background-color:#97c1c0;
+    border-radius: 25px;
+    margin: 0;
+}
+section div h2:nth-last-of-type(1):hover{
+    background-color: #04c5c0 ;
 }
