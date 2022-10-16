@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cuadros de  Velazquez</title>
+    <title>Cuadros de Velazquez</title>
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/java.js"></script>
 </head>
@@ -13,25 +13,25 @@
         <h1> Cuadros de Velazquez</h1>
     </header>
     <aside>
-        <img class="mini breda"  onclick="activarb()" src="img/breda-mini.jpg" id="activo">
+        <img class="breda"  onclick="activarb()" src="img/breda-mini.jpg" alt="breda-mini" id="activo">
         <br>
-        <img class="mini venus" onclick="activarve()" src="img/venus-mini.jpg" >
+        <img class="venus" onclick="activarve()" src="img/venus-mini.jpg" alt="venus-mini">
         <br>
-        <img class="mini vulcano" onclick="activarvu()" src="img/vulcano-mini.jpg">
+        <img class="meninas" onclick="activarm()" src="img/meninas-mini.jpg" alt="meninas-mini">
         <br>
-        <img class="mini meninas" onclick="activarm()" src="img/meninas-mini.jpg">
+        <img class="vulcano" onclick="activarvu()" src="img/vulcano-mini.jpg" alt="vulcano-mini">
         <br>
-        <img class="mini inocencio" onclick="activari()" src="img/inocencio-mini.jpg">
+        <img class="inocencio" onclick="activari()" src="img/inocencio-mini.jpg" alt="inocencio-mini">
     </aside>
     <section>
-        <article>
-        <img id="imagen" src="">
+        <article onclick="zoom()">
+            <img id="imagen" src="" alt="imagen-grande">
         </article>
-        <div id="texto">
-            <h1>RENDICIÓN DE BREDA</h1>
-            <h2>1634-35</h2>
-            <h2>380€</h2>
-            <h2>Réplica del cuadro a colores originales y tamaño 150 x 80cm</h2>
+        <div>
+            <h1 id="nombre"></h1>
+            <h2 id="fecha"></h2>
+            <h2 id="precio"></h2>
+            <h2 id="descripcion"></h2>
             <h2>COMPRAR</h2>
         </div>
     </section>
