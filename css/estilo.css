@@ -3,8 +3,9 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    height:93%;
+    height:90%;
 }
+/*Titulo*/
 header h1{
     font-weight: 200;
     height: 100px;
@@ -13,6 +14,7 @@ header h1{
     align-items: center;
     justify-content: center;
 }
+/*Aside*/
 aside{
     overflow: auto;
     position: fixed;
@@ -32,14 +34,16 @@ aside img:hover {
     filter: grayscale(0);
     transition-duration: 3s;
 }
-aside #activo{
+aside img#activo{
     filter: grayscale(0);!important;
 }
+/*Section*/
 section{
     margin-left: 200px;
     height: 100%;
     position: relative;
 }
+/*Section-Article*/
 section article{
     width: 50%;
     height: 100%;
@@ -51,13 +55,32 @@ section article img{
     object-fit: cover;
     z-index: 1;
 }
+/*zoom*/
+section article#zoom {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    margin-left: 12%;
+}
+section article#zoom:after{
+    content: " ";
+    background-color:black;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:0;
+}
+/*Section-div*/
 section div{
     width: 45%;
     display: inline-block;
     text-align: center;
     white-space: initial;
     position: relative;
-    top: -25px;
+    top: -5%;
 }
 section div h1{
     font-weight: 700;
@@ -69,30 +92,12 @@ section div h2:nth-of-type(2), section div h2:nth-last-of-type(1){
     font-weight: 700;
 }
 section div h2:nth-last-of-type(1){
-    padding: 20px 100px 20px 100px;
+    padding: 4% 15% 4% 15%;
     display: inline-block;
     background-color:#97c1c0;
-    border-radius: 25px;
+    border-radius: 1em;
     margin: 0;
 }
 section div h2:nth-last-of-type(1):hover{
     background-color: #04c5c0 ;
-}
-
-section article#zoom {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    margin-left: 13%;
-}
-section article#zoom:after{
-    content: " ";
-    background-color:black;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index:0;
 }
